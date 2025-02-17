@@ -1,5 +1,5 @@
 package com.storage;
 
-public enum Keys {
+public enum ScenarioKeys {
     CURRENT_PAGE
 }
