@@ -1,0 +1,9 @@
+ui:
+  baseURI: http://google.com
+  browser: CHROME
+  headless: false
+
+
+data:
+  serachea: lady gaga bla bla bla
+  serachea: lady gaga bla bla bla2

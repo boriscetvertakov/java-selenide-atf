@@ -1,0 +1,14 @@
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/configs/CucumberSpringConfig.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/configs/CompScanConfig.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/storage/Keys.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/annotations/ATFPage.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/pageObjects/AbstractPage.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/exceptions/ATFRuntimeException.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/annotations/ATFWebElement.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/configs/UIProperties.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/utilities/ReflectionUtilityPO.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/steps/CommonUISteps.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/actions/CommonUIActions.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/pageObjects/GooglePage.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/services/ui/UIService.java
+/Users/bcetvertacov/Work/ATF/ATF/src/main/java/com/utilities/ScenarioContext.java
