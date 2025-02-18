@@ -1,24 +1,17 @@
 package com.services.ui;
 
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import com.configs.UIProperties;
 import com.utilities.ReflectionUtilityPO;
-import com.utilities.ScenarioContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import static com.storage.Keys.CURRENT_PAGE;
 
 @Service
 @RequiredArgsConstructor
 public class UIService {
 
-    public final UIProperties uiProperties;
-
-    public Object retrievePageObjectByName(String pageName) {
-        Object pageObject = ReflectionUtilityPO.getPageObjectByBusinessName(pageName);
-        return pageObject;
-    }
+    private final UIProperties uiProperties;
 
     public String retrievePageUriByName(String pageName) {
         Object pageObject = retrievePageObjectByName(pageName);
@@ -29,11 +22,21 @@ public class UIService {
     public String retrievePageUriFromPageObj(Object pageObject) {
         return ReflectionUtilityPO.getUriFromPO(pageObject);
     }
-    
+
+    public SelenideElement retrieveWebElementByName(String elementName, Object pageObject) {
+        SelenideElement webElement = ReflectionUtilityPO.getWebElementFromPO(elementName, pageObject);
+        return webElement;
+    }
+
     public Object navigateToPage(String pageName) {
         Object pageObject = retrievePageObjectByName(pageName);
-        String uri = uiProperties.baseURI + ReflectionUtilityPO.getUriFromPO(pageObject);
-        Selenide.open(uri);
+        String uriPath = ReflectionUtilityPO.getUriFromPO(pageObject);
+        Selenide.open(uriPath);
         return pageObject;
     }
+
+    private static Object retrievePageObjectByName(String pageName) {
+        return ReflectionUtilityPO.getPageObjectByBusinessName(pageName);
+    }
+
 }
