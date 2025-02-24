@@ -17,5 +17,7 @@ public class UIProperties {
     @Value("${headless}")
     public boolean headless;
 
+    @Value("${timeout}")
+    public Integer timeout;
 }
 
