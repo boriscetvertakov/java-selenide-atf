@@ -1,9 +1,6 @@
 ui:
-  baseURI: http://google.com
+  baseURI: https://999.md
   browser: CHROME
   headless: false
-
-
-data:
-  serachea: lady gaga bla bla bla
-  serachea: lady gaga bla bla bla2
+#timeout is defined in seconds
+  timeout : 15

@@ -31,4 +31,13 @@ public class CommonUIActions {
         element.sendKeys(key);
 
     }
+
+    public String getFieldTextContent(String fieldName) {
+       return getWebElement(fieldName).text();
+    }
+
+    public SelenideElement getWebElement(String elem) {
+        Object currentPage = ScenarioContext.get(ScenarioKeys.CURRENT_PAGE);
+        return uiService.retrieveWebElementByName(elem, currentPage);
+    }
 }

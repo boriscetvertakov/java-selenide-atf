@@ -6,9 +6,9 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$x;
 
-@ATFPage(pageName = "Google Page", url = "/")
-public class GooglePage {
+@ATFPage(pageName = "Home Page", url = "/")
+public class HomePage {
 
     @ATFWebElement(elementName = "Search Area")
-    public SelenideElement searchArea = $x("//textarea[@class='gLFyf']");
+    public SelenideElement searchArea = $x("//input[@data-test-id='search-input']");
 }
